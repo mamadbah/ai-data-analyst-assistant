@@ -4,3 +4,4 @@ matplotlib
 seaborn
 openpyxl
 reportlab
+streamlit-mic-recorder
