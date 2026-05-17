@@ -1,0 +1,1 @@
+[{"file_name": "Dirty_data.csv", "rows": 10000, "columns": 7, "insights": ["The dataset contains 4096 missing values.", "CustomerID has relatively high average values.", "CustomerID contains unusually high maximum values.", "Age has relatively high average values."], "recommendations": ["Consider cleaning or filling missing values.", "Review outliers in CustomerID."]}]
