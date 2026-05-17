@@ -6,3 +6,4 @@ openpyxl
 reportlab
 streamlit-mic-recorder
 gTTS
+openai
