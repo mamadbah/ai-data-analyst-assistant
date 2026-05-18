@@ -36,6 +36,97 @@ st.set_page_config(
     page_title="AI Data Analyst",
     layout="wide"
 )
+
+st.markdown("""
+<style>
+.stDownloadButton {
+    margin-bottom: 80px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+
+/* Main page spacing */
+.main .block-container {
+    padding-bottom: 140px;
+}
+
+/* Keep chat input above footer */
+.stChatInput {
+    bottom: 90px !important;
+}
+
+/* Fixed Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: #000814;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 999999;
+    border-top: 1px solid #1d4ed8;
+}
+
+/* Prevent footer flicker */
+[data-testid="stAppViewContainer"] {
+    overflow-x: hidden;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+st.markdown("""
+<style>
+
+/* Add space at bottom of page */
+.main .block-container {
+    padding-bottom: 180px;
+}
+
+/* Move chat input above footer */
+.stChatInput {
+    bottom: 90px !important;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    background-color: #000814;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 999;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+st.markdown("""
+<style>
+
+/* Fix chat input width and position */
+.stChatInput {
+    position: fixed !important;
+    bottom: 85px !important;
+    left: 290px !important;
+    width: calc(100% - 340px) !important;
+    z-index: 998;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
 st.markdown("""
 <style>
 
@@ -1057,6 +1148,11 @@ if file_to_load:
                 )
             voice_text = transcript.text
             st.success(f"🎤 You said: {voice_text}")
+    
+    st.markdown("<div style='margin-bottom:120px;'></div>", unsafe_allow_html=True)
+
+    st.markdown("<div style='margin-top:80px;'></div>", unsafe_allow_html=True)
+
 
     # ================= MERGED CHAT INPUT =================
 
@@ -1159,6 +1255,14 @@ if file_to_load:
     mime="application/pdf"
     )
 
+
+
+st.markdown("""
+<div class="footer">
+🚀 AI Data Analyst Assistant<br>
+Developed by Mamadou Djouhe Bah
+</div>
+""", unsafe_allow_html=True)
 
 
 
